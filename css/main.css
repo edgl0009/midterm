@@ -1,9 +1,78 @@
+/* START CLEARFIX */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+/* START CSS */
+
+body {
+  background-color: #e8e8e8;
+}
+
+/*BANNER CSS */
+
 .poutine, .buttSup, .pepPizza {
-  max-width: 33.1%;
+  max-width: 625.3px;
   max-height: 33.33%;
-  padding: 0px 0px 0px 0px;
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+/* NAV BAR CSS */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 li {
-  display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ff6e21;
+}
+
+.newsFeed {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  background-color: #fcca46;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* NEWFEED CSS */
+
+.ryleyAndHarley {
+  width: 40.5%;
+}
+
+.staff {
+  width: 40.5%;
+  height: 500px;
 }
